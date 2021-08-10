@@ -2,7 +2,7 @@ FROM node:12.13.0-alpine
 RUN mkdir -p /opt/app
 WORKDIR /opt/app
 RUN adduser -S app
-COPY qrcode/package*.json .
+COPY qrcode/package.json .
 RUN npm install
 COPY qrcode/ .
 RUN chown -R app /opt/app
