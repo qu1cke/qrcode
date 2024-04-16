@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Synology
+.DS_Store
